@@ -4,48 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/ico.png">
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/index.css">
     <title>Login | Rocketseat</title>
 </head>
 <body>
-    <div class="container">
-    
-        <div class="rocket">
-            <img src="images/logo.png" alt="">
-            <h1>Faça seu login na plataforma</h1>
-        </div>
-      
-        <div class="login">
-            <form action="">
-                <div class="input">
-                    <img src="./images/email.svg" alt="">  
-                    <input type="email" placeholder="E-mail"> 
-                </div>
+        <div class="container">
+            <div class="rocket">
+                <img src="images/logo.png" alt="">
+                <h1>Faça seu login <br> 
+                    na plataforma</h1>
+            </div>
+            
+            <form>
+                <section class="container-input">
+                    <div class="input">
+                        <img src="./images/email.svg" alt="">  
+                        <input type="email" placeholder="E-mail"> 
+                    </div>
 
-                <div class="input">
-                    <img src="./images/key.svg" alt="">
-                    <input type="password" placeholder="Senha">
-                </div>
+                    <div class="input">
+                        <img src="./images/key.svg" alt="">
+                        <input type="password" placeholder="Senha">
+                    </div>
+                </section>
 
                 <a class="link-purple" href="#">Esqueci minha senha</a>
-        
-                <button disabled class="button" type="submit">
+    
+                <button class="button-log"disabled class="button" type="submit">
                     ENTRAR
                 </button>
-            </form>
-
-            <p>Não tem uma conta? <a class="link-purple" href="">Registre-se</a></p>
             
-            <div class="networks"> 
-                <p>Ou entre com</p>
-                
-                <button class="github">
-                    <img src="./images/github.svg" alt="">
-                    <a  href="">Github</a>
-                </button>
-            </div>
+                <p>Não tem uma conta? <a class="link-purple" href="">Registre-se</a></p>
+
+                <div class="line"></div>
+
+                <a href="" class="network-github">
+                    <div>Ou entre com</div>
+                    
+                    <div class="button-git">
+                        <img src="./images/github.svg" alt="">
+                        Github
+                    </div>
+                </a> 
+            </form>
         </div>
-    </div>
 </body>
 </html>
