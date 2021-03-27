@@ -3,10 +3,13 @@ body{
 }
 
 .container{
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    flex-wrap: wrap;
+    
+    margin: auto;
+    height: 100vh;   
 }
 
 .rocket{
@@ -15,14 +18,17 @@ body{
 
 .rocket img{
     width: 20rem;
-    height: 7rem;
+    height: 4rem;
 
     margin-bottom: 5rem;
 }
+
 .rocket h1{
-    width: 40.1rem;
-    color: var(--color-text);
     font-size: 5.4rem;
+    
+    width: 40.1rem;
+
+    color: var(--color-text);
 }
 
 .login{
@@ -31,29 +37,48 @@ body{
     padding: 6.3rem;
 
     border-radius: 5px;
+
     color: #fff;
     background-color: var(--color-container);
 }
 
 .login input{
+    font-size: 1.6rem;
+
     width: 100%;
     height: 5rem;
-    font-size: 1.6rem;
-    background: var(--color-background);
-    border-color: var(--color-background);
-    border: none;
-    color: var(--color-text);
-
     margin-bottom: 1rem;
     padding: 0px 2.65em;
+   
+    border: none;
     border-radius: 5px;
+    border-color: var(--color-background);
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+.login .input{
+    position: relative;
+}
+
+.login .input img{
+    position: absolute;
+    top: 17px;
+    left: 14px;
+
+    color: var(--color-container);
+}
+s
+
+.login input::placeholder{
+    font-weight: 300;
 }
 
 .login .link-purple{
     font-size: 1.4rem;
     font-weight: 600;
+
     color: var(--color-primary);
-    
     opacity: 0.8;
     transition: opacity 0.2s ease 0s;
 }
@@ -66,16 +91,14 @@ body{
     width: 35.2rem;
     height: 5rem;
     margin-top: 2rem;
+    margin-bottom: 2.4rem;
 
     border: none;
     border-radius: 5px;
-    background: rgb(65, 53, 107);
     color: rgba(255, 255, 255, 0.35);
+    background: rgb(65, 53, 107);
 
-    margin-bottom: 2.4rem;
     cursor: not-allowed;
-
-
 }
 
 .login > p{
@@ -84,15 +107,15 @@ body{
 }
 
 .networks{
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    border-top: 1px solid rgb(40, 39, 47);;
+    width: 100%;
     margin-top: 2rem;
     padding-top: 3rem;
 
+    border-top: 1px solid var(--color-container-light);
 }
 
 .networks p{
@@ -100,17 +123,36 @@ body{
 }
 
 .networks .github{
-    padding: 1.4rem 9rem;
+    padding: 1.4rem 7rem;
+ 
+    border: none;
     border-radius: 5px;
-
     background-color: var(--color-container-light);
+   
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.networks .github:hover{
+    background-color: var(--color-primay-hover);
+}
+
+
+.networks .github img{
+    padding: .4rem .6rem 0 0;  
 }
 
 .networks .github a{
-    color: white;
     font-size: 1.6rem;
     font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
-  
+    color: white;
 }
+
+@media(max-widht: 900px){
+    
+}
+
+
 
