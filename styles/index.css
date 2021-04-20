@@ -49,11 +49,55 @@ form{
     position: relative;
 }
 
-.container-input .input img{
+.container-input .input .div-email{
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    font-size: 14px;
+}
+
+.container-input .input .div-email svg{
+    fill: rgb(40, 39, 44);;
+    stroke: rgb(40, 39, 44);;  
+}
+
+.container-input .input .div-senha{
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    font-size: 14px;
+}
+
+.container-input .input .div-senha svg{
+    fill: rgb(40, 39, 44);;
+    stroke: rgb(40, 39, 44);;  
+}
+
+
+.input .eye{
+    font-size: 18px;
     position: absolute;
     top: 16px;
-    left: 16px;
+    right: 16px;
 }
+
+.input .eye svg{
+    fill: rgb(130, 87, 229);
+    stroke: rgb(130, 87, 229);
+}
+
+
+
+
+.container-input .input-email:focus{
+    border: 2px solid var(--color-primary);
+}
+
+.container-input .input-senha:focus{
+    border: 2px solid var(--color-primary);
+}
+
+
 
 .container-input .input input{
     font-size: 1.6rem;
@@ -77,14 +121,14 @@ form > p{
     font-weight: 600;
     margin: .8rem 0 2.4rem;
 
-    transition: background 2s;
-    color: rgb(65, 53, 107);
+    transition: opacity 100ms;
+    color: var(--color-primary); 
+    opacity: .7;
 }
 
 .link-purple:hover{
-    color: #7c54d8;
+    opacity: 1;
 }
-
 
 .button-log{
     font-size: 1.6rem;
@@ -182,7 +226,6 @@ form > p{
 
 .network-github .button-git svg{
     margin-right: 1rem;
-    /* fill: var(--color-primary-hover); */
 }
 
 .network-github .button-git:hover{
@@ -191,6 +234,4 @@ form > p{
 }
 
 
-.container-input input:focus{
-    border: 2px solid var(--color-primary);
-}
+
